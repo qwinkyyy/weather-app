@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Обеспечивает правильное отображение на мобильных устройствах -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключает внешний файл стилей -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Подключает иконки из библиотеки Boxicons -->
+    <title>Weather App</title> 
+</head>
+<body>
+    <div class="container"> <!-- Основной контейнер для всего контента -->
+        <div class="left-info"> <!-- Левый блок информации -->
+            <div class="pic-gradient"> <!-- Контейнер с градиентом фона -->
+                <div class="today-info"> <!-- Блок с информацией о сегодняшнем дне -->
+                    <h2>Воскресенье</h2>
+                    <span>30 Июня 2024</span> 
+                    <div>
+                        <i class='bx bx-current-location'></i> <!-- Иконка местоположения -->
+                        <span>Россия, РФ</span> 
+                    </div>
+                </div>
+                <div class="today-weather"> <!-- Блок с сегодняшней погодой -->
+                    <i class='bx bx-sun' ></i> <!-- Иконка погоды (солнечно) -->
+                    <h1 class="weather-temp"> <!-- Отображает текущую температуру -->
+                        25&#176;C <!-- Температура в градусах Цельсия -->
+                    </h1>
+                    <h3>Солнечно</h3> 
+                </div>
+            </div>
+        </div>
+        <div class="right-info"> <!-- Правый блок информации -->
+            <div class="day-info"> <!-- Блок с дополнительной информацией -->
+                <div>
+                    <span class="title">АТМОСФЕРНЫЕ ОСАДКИ</span> 
+                    <span class="value">4 %</span> 
+                </div>
+                <div>
+                    <span class="title">ВЛАЖНОСТЬ</span> 
+                    <span class="value">34 %</span> 
+                </div>
+                <div>
+                    <span class="title">СКОРОСТЬ ВЕТРА</span> 
+                    <span class="value">6 km/h</span> 
+                </div>
+            </div>
+            <ul class="days-list"> <!-- Список с прогнозом погоды на несколько дней -->
+                <li>
+                    <i class='bx bx-cloud'></i> <!-- Иконка погоды (облачно) -->
+                    <span>Сб</span> 
+                    <span class="day-temp">23&#176;C</span> 
+                </li>
+                <li>
+                    <i class='bx bx-sun'></i> <!-- Иконка погоды (солнечно) -->
+                    <span>Вс</span> 
+                    <span class="day-temp">28&#176;C</span> 
+                </li>
+                <li>
+                    <i class='bx bx-cloud-rain'></i> <!-- Иконка погоды (дождь) -->
+                    <span>Пн</span> 
+                    <span class="day-temp">02&#176;C</span> 
+                </li>
+                <li>
+                    <i class='bx bx-cloud-drizzle'></i> <!-- Иконка погоды (морось) -->
+                    <span>Вт</span> 
+                    <span class="day-temp">14&#176;C</span> 
+                </li>
+            </ul>
+            <div class="btn-container"> <!-- Контейнер с кнопками -->
+                <button class="current-loc-button">Мое текущее местоположение</button> <!-- Кнопка для определения текущего местоположения -->
+                <button class="loc-button">Поиск местоположения</button> <!-- Кнопка для поиска местоположения -->
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script> <!-- Подключает файл JavaScript -->
+</body>
+</html>

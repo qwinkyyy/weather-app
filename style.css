@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Стили для сброса отступов и полей, установка box-sizing и базового шрифта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Основные стили для body */
+body {
+    background-color: #1c1c1c;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для контейнера, включая ширину, цвет фона, текст и тень */
+.container {
+    width: 700px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    overflow: hidden;
+}
+
+/* Стили для левой части информации */
+.left-info {
+    width: 40%;
+    background: linear-gradient(to bottom right, #4ecdc4, #90e0ef); /* Изменен на голубой цвет */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Стили для сегодняшней информации */
+.today-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовка сегодняшней информации */
+.today-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Стили для дополнительной информации сегодня */
+.today-info span {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* Стили для блока сегодняшней погоды */
+.today-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для иконки сегодняшней погоды */
+.today-weather .bx {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+/* Стили для температуры сегодняшней погоды */
+.weather-temp {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* Стили для описания сегодняшней погоды */
+.today-weather h3 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #ddd;
+}
+
+/* Стили для правой части информации */
+.right-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Стили для блока дополнительной информации о погоде на день */
+.day-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Стили для каждого элемента дополнительной информации о погоде на день */
+.day-info div {
+    width: 30%;
+    text-align: center;
+}
+
+/* Стили для заголовка элемента дополнительной информации */
+.day-info .title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Стили для значения элемента дополнительной информации */
+.day-info .value {
+    font-size: 1.2rem;
+}
+
+/* Стили для списка дней */
+.days-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+/* Стили для элемента списка дня */
+.days-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* Стили для элемента списка дня при наведении */
+.days-list li:hover {
+    background-color: #4ecdc4; /* Изменен на голубой цвет */
+    color: #fff;
+}
+
+/* Стили для иконки в списке дней */
+.days-list .bx {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+/* Стили для температуры в списке дней */
+.days-list .day-temp {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Стили для контейнера кнопок */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Стили для кнопок ввода местоположения */
+.loc-button, .current-loc-button {
+    width: 48%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background: #4ecdc4; /* Изменен на голубой цвет */
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* Стили для кнопок ввода местоположения при наведении */
+.loc-button:hover, .current-loc-button:hover {
+    background: #90e0ef; /* Изменен на голубой цвет */
+}
